@@ -14,6 +14,9 @@ In my apartment complex, someone through away this robotic vaccum. It looks like
  I definently want to utilize the motor drivers and IR sensors. This will save a lot of work testing new components and the wiring harnesses are already built. That being said I need to get into the STM32f030 and rewrite the firmware. Below is a picture of the PCB, and I believe I have found a UART port I may be able to utilize.
  
  ![Front of v3s PCB](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/frontofIlifev3s_pcb.jpg)
+ 
+ And on the back I have soldered some jumper wires so I can easily connect/disconnect to this header.
+ 
  ![Back of PCB](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/backofIlifePCB.jpg)
  
  I've built a control box and small 1DoF ultasonic detection system I wish to place on the end of a stepper driven 2DoF arm. I would like to use the original PCB because I don't really want to spend the time reintegrating these sensors and myster stepper driver boards.
@@ -41,14 +44,15 @@ In my apartment complex, someone through away this robotic vaccum. It looks like
   
      --------------------------------------------------------------------------------------
      
- Mostly passive components, I'm looking across the board and find an LM224 which is an op and LM258.....which appear to be quad/dual op amp ICs. 
+Mostly passive components, I'm looking across the board and find an LM224 which is an op and LM258.....which appear to be quad/dual op amp ICs. That's not very useful for our purposes. Each of the main wheel motors have a small pcb with what appears to be small encoder pcb. We don't really need to mess with any of this right now, but it's good to know what all the components on your board are doing.
  
 I'm not totally alone. I have found a repository by Elias Kotlyar who has a good breakdown of a very similar model...and with what appears to be the exact pcb from my V3s. 
 
 Check out his repo here:
 https://github.com/EliasKotlyar/IlifeX5Disassembly
 
-He has created a good labeled image of the pcb, and I've indicated here the point of attack on the board I'm going to use
+He has created a good labeled image of the pcb. I've indicated on the front of the pcb the 4 pins I have soldered wires to. This is our initial point of attack.
+https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/PCB-LABELED2.jpg
 
  
  
