@@ -19,9 +19,13 @@ In my apartment complex, someone through away this robotic vaccum. It looks like
  Examining the chip we can look up this information in the datasheet for this STM32F030 R8T6
  
  R - 64 pins
+ 
  8 - 64 kbyte of flash
+ 
  T - LQFP package
+ 
  6 -  (-40,85) degree C operating range
+ 
  
  and we must make sure to stay within the characterized ranges for voltage 
  ![Voltage characteristics from datasheet](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/ratingsstm32.PNG)
