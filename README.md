@@ -38,6 +38,21 @@ In my apartment complex, someone through away this robotic vaccum. It looks like
  ... and current, during testing and operation. If one does not adhere, it is most likely you will experience magic smoke. If this happens, you are observing the soul of your chip ascending into silicon heaven.
   ![Current characteristics from datasheet](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/current%20ratings.PNG)
   
+  
+     --------------------------------------------------------------------------------------
+     
+ Mostly passive components, I'm looking across the board and find an LM224 which is an op and LM258.....which appear to be quad/dual op amp ICs. 
+ 
+I'm not totally alone. I have found a repository by Elias Kotlyar who has a good breakdown of a very similar model...and with what appears to be the exact pcb from my V3s. 
+
+Check out his repo here:
+https://github.com/EliasKotlyar/IlifeX5Disassembly
+
+He has created a good labeled image of the pcb, and I've indicated here the point of attack on the board I'm going to use
+
+ 
+ 
+  
  =================================================================================================================================
  
  
