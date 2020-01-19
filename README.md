@@ -4,6 +4,11 @@ Project to reverse engineer the iLife v3s robotic vaccum. Trying to rewrite the 
 
 In my apartment complex, someone through away this robotic vaccum. It looks like solid base to use as a robotics platform. I have identified all the components and their headers. I will continually add to this readme, as I work throguh the problems associated with reverse engineering this board. 
 
+
+===============================================================================================================================
+1/19/20 - I'm about done with this ultasonic sensor system. It is operational, the only hiccups I'm having are with refresh rates to the display ( which isn't really relevant to the final implementation I plan on using here). I've identified the chip and found what I believe to be a debug/uart port on the PCB labeled J11. I'm going to go through the datasheet and learn a little bit before I start messing with it, as all of my experience with ARM processors (in a non .."end user capacity") have been in a linux environement on the raspberry pi. I have more experience with 8-bit AVR processors (328p,ATMEGA1280,ATMEGA2560) and Espressif processors (ESP8266 and ESP32), as those chips are easier to translate from dev board into my own hardware with a soldering iron nad components. 
+
+
 ![Current Image of system Components](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/system.jpg)
 
  I definently want to utilize the motor drivers and IR sensors. This will save a lot of work testing new components and the wiring harnesses are already built. That being said I need to get into the STM32f030 and rewrite the firmware. Below is a picture of the PCB, and I believe I have found a UART port I may be able to utilize.
