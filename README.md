@@ -19,12 +19,12 @@ In my apartment complex, someone through away this robotic vaccum. It looks like
  
  ![Back of PCB](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/backofIlifePCB.jpg)
  
- I've built a control box and small 1DoF ultasonic detection system I wish to place on the end of a stepper driven 2DoF arm. I would like to use the original PCB because I don't really want to spend the time reintegrating these sensors and motors with mystery encoder boards.
+ I've built a control box and small 1DoF ultrasonic detection system I wish to place on the end of a stepper driven 2DoF arm. I would like to use the original PCB because I don't really want to spend the time reintegrating these sensors and motors with mystery encoder boards.
  
  ![STM32 PINOUT](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/processor.PNG)
  Looking through the datasheet we find the pinout, and voltage/current characteristics for this processor:
  
- Examining the chip we can look up this information in the datasheet for this STM32F030 R8T6
+ Examining the chip markings we find: STM32F030 R8T6
  
  R - 64 pins
  
@@ -38,12 +38,12 @@ In my apartment complex, someone through away this robotic vaccum. It looks like
  and we must make sure to stay within the characterized ranges for voltage 
  ![Voltage characteristics from datasheet](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/ratingsstm32.PNG)
  
- ... and current, during testing and operation. If one does not adhere, it is most likely you will experience magic smoke. If this happens, you are observing the soul of your chip ascending into silicon heaven.
+ ... and current, during testing and operation. If one does not adhere, most likely you will experience the fabled magic smoke. If this happens, you are observing the soul of your chip ascending into silicon heaven.
   ![Current characteristics from datasheet](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/current%20ratings.PNG)
   
  
      
-Looking ing on the board, it's mostly populated by passive components, I can see an LM224 and LM258.....which are quad/dual op amp ICs. That's not very useful for our purposes. Each of the main wheel motors have a small pcb with what appears to be small encoder pcb. We don't really need to mess with any of this right now, but it's good to know what all the components on your board are doing.
+Looking on the board, it's mostly populated by passive components, I can see an LM224 and LM258.....which are quad/dual op amp ICs. That's not very useful for our purposes. Each of the main wheel motors have a small pcb with what appears to be small encoder pcb. We don't really need to mess with any of this right now, but it's good to know what all the components on your board are doing.
  
 I'm not totally alone. I have found a repository by Elias Kotlyar who has a good breakdown of a very similar model...and with what appears to be the exact pcb from my V3s. 
 
