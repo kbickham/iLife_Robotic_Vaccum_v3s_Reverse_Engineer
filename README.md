@@ -56,13 +56,19 @@ https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/maste
 You know what... I'm going to stop right and just email the manufacturer. The company is based out of ShenZen, and the culture there is a little more open to the notion of sharing. I'm going to ask for schematics to the main PCB as there are a lot of vias aroudn the JP11 header and it's hard to visually trace them. I'll still use a multimeter to test continuity to these mcu pins, but it really couldn't hurt to ask.
 
  =================================================================================================================================
- 2/1/2020
-It's 7am and I found some good references. From multiple references, 
+ 2/1/2020:
+
+7am:
+
+ I've found some good references over the past few weeks, as I've been pretty busy. I'm reading all I can / doing some coding problems until Jiu Jitsu at moon,
+Then I'm gonna take a crack at this thing.
+
 -YouTube video from a European seminar on reverse engineering an SD ( will post link later ) I
 https://youtu.be/GX8-K4TssjY
 
 -Guide on reverse engineering firmware from stm32f1xx ( this board is f3xx though)
 https://medium.com/techmaker/reverse-engineering-stm32-firmware-578d53e79b3
+
 
 From what I understand, I need to do a null pointer dereference/make a read 
 From 0x00 in attempt to dump the first part of firmware from memory.
