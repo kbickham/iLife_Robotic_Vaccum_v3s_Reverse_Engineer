@@ -60,7 +60,7 @@ You know what... I'm going to stop right and just email the manufacturer. The co
 
 7am:
 
- I've found some good references over the past few weeks, as I've been pretty busy. I'm reading all I can / doing some coding problems until Jiu Jitsu at moon,
+ I've found some good references over the past few weeks, as I've been pretty busy. I'm reading all I can / doing some coding problems until Jiu Jitsu at noon,
 Then I'm gonna take a crack at this thing.
 
 -YouTube video from a European seminar on reverse engineering an SD ( will post link later ) I
