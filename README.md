@@ -59,7 +59,10 @@ You know what... I'm going to stop right and just email the manufacturer. The co
  2/1/2020
 It's 7am and I found some good references. From multiple references, 
 -YouTube video from a European seminar on reverse engineering an SD ( will post link later ) I
--https://medium.com/techmaker/reverse-engineering-stm32-firmware-578d53e79b3
+https://youtu.be/GX8-K4TssjY
+
+-Guide on reverse engineering firmware from stm32f1xx ( this board is f3xx though)
+https://medium.com/techmaker/reverse-engineering-stm32-firmware-578d53e79b3
 
 From what I understand, I need to do a null pointer dereference/make a read 
 From 0x00 in attempt to dump the first part of firmware from memory.
