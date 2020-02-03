@@ -85,7 +85,7 @@ I still have to ascertain which is pin#1 as there are circles in two corners of 
 ![Color coded pin connections](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/processorcolorcoded.jpg)
 
 
-8:15pm After careful testing and combing through the data sheet, I have ascertained that port J11 is not a uart port...it's an spi interface (while on other versions of this chip..HOWEVER this is an STMF030 R8T6 and I believe pin 49  (my labeled D) may have TX function on usart2.
+8:15pm After careful testing and combing through the data sheet, I have ascertained that port J11 is not a uart port...it's a a single wire (SWDIO/SWCLK) interface (andthis is an STMF030 R8T6 and I believe pin 49  (my labeled D) may have TX function on usart2.
 
 
 A: Pins 1,13,32,64 - VDD - power (max 4v, 13 is analog)
@@ -98,10 +98,5 @@ D: Pin 49 - PA14 - SWCLK  (/USART2_TX - untested)
 
 ![Map of pin functions for header J11](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/pin%20functions.jpg)
 
-I'm going to read a bit more, but I think I'm done trying to interface with the hardware for the day.
 
- 
- 
- 
- 
- 
+I have an ST-Link V2, I'm going to see what I can do. I predict the manufacturer has the firmware protected and I won't be able to read... but we'll see.
