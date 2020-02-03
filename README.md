@@ -71,9 +71,9 @@ https://medium.com/techmaker/reverse-engineering-stm32-firmware-578d53e79b3
 
 
 From what I understand, I need to do a null pointer dereference/make a read 
-From 0x00 in attempt to dump the first part of firmware from memory.
+From 0x00 in attempt to dump the first firmware from memory.
 After I get this, I need to search for string literals which may be used as a 
-Key to decrypt firmware if it is encrypted. I must however first find ports to connect JTAG or UART... some point of entry to begin my attempts. I have multiple STLINK v2s , and this is the only stm32 I have acess to currently...after an interview for a job I have gathered that I must in fact gain experience working with this processor type. 
+Key if it is encrypted. I must however first find ports to connect JTAG or UART...  I have an STLINK v2 , and this is the only stm32 I have acess to currently...after an interview for a job I have gathered that I must in fact gain experience working with this processor type. 
 
 5:15pm
 
