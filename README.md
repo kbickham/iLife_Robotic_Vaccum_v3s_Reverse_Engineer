@@ -85,6 +85,12 @@ I still have to ascertain which is pin#1 as there are circles in two corners of 
 ![Color coded pin connections](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/processorcolorcoded.jpg)
 
 
+8:15 After careful testing and combing through the data sheet, I have ascertained that port J11 is not a uart port...it's an spi interface (while on other versions of this chip..HOWEVER this is an STMF030 R8T6 and I believe this may mean that (my labeled D) may have TX function on usart 2) 
+
+![Map of pin functions for header J11](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/pin%20functions.jpg)
+
+I'm going to read a bit more, but I think I'm done trying to interface with the hardware for the day.
+
  
  
  
