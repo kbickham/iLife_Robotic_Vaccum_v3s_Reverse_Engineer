@@ -81,8 +81,8 @@ The first thing I need to do, is to find what pins connect to this J11 port and 
 With a multimeter I checked, rechecked, and triple checked the pins and maked the pins from which continuity existed between the port J11 pins and the processor's pins. Initially, looking at the back of the PCB traces... I guessed the top first hole on the port was power and that the second was ground...as the second was not isolated from the ground plane. I have just completed this continuity test, and I believe that assumption may be correct.
 ![notes from continuity test](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/pinout.jpg)
 
-I still have to ascertain which is pin#1 as there are circles in two corners of the processor on this board. I have drawn color coded lines corresponding to the color of wires I have soldered to the j11 port (as seen above).
-![Color coded pin connections](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/pinout.jpg)
+I still have to ascertain which is pin#1 as there are circles in two corners of the processor on this board. I have drawn color coded lines corresponding to the color of wires I have soldered to the j11 port (as seen above). NOTE that that board is necessarily oriented in the same position as in above pictures. This is in attempt to show the chip markings.
+![Color coded pin connections](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/processorcolorcoded.jpg)
 
 
  
