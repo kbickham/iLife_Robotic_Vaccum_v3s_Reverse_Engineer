@@ -5,7 +5,6 @@ Project to reverse engineer the iLife v3s robotic vaccum. Trying to rewrite the 
 In my apartment complex, someone through away this robotic vaccum. It looks like solid base to use as a robotics platform. I have identified all the components and their headers. I will continually add to this readme, as I work throguh the problems associated with reverse engineering this board. 
 
 
-===============================================================================================================================
 # 1/19/20
 I'm about done with this ultasonic sensor system. It is operational, the only hiccups I'm having are with refresh rates to the display ( which isn't really relevant to the final implementation I plan on using here). I've identified the chip and found what I believe to be a debug/uart port on the PCB labeled J11. I'm going to go through the datasheet and learn a little bit before I start messing with it, as all of my experience with ARM processors (in a non .."end user capacity") have been in a linux environement on the raspberry pi. I have more experience with 8-bit AVR processors (328p,ATMEGA1280,ATMEGA2560) and Espressif processors (ESP8266 and ESP32), as those chips are easier to translate from dev board into my own hardware with a soldering iron nad components. 
 
@@ -56,7 +55,7 @@ https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/maste
 
 You know what... I'm going to stop right and just email the manufacturer. The company is based out of ShenZen, and the culture there is a little more open to the notion of sharing. I'm going to ask for schematics to the main PCB as there are a lot of vias aroudn the JP11 header and it's hard to visually trace them. I'll still use a multimeter to test continuity to these mcu pins, but it really couldn't hurt to ask.
 
- =================================================================================================================================
+
 # 2/1/2020:
 
 7am:
