@@ -87,9 +87,13 @@ I still have to ascertain which is pin#1 as there are circles in two corners of 
 
 8:15pm After careful testing and combing through the data sheet, I have ascertained that port J11 is not a uart port...it's an spi interface (while on other versions of this chip..HOWEVER this is an STMF030 R8T6 and I believe pin 49  (my labeled D) may have TX function on usart2.
 
+
 A: Pins 1,13,32,64 - VDD - power (max 4v, 13 is analog)
+
 B: Pins 12,31,63 - VSS - ground (12 is analog)
+
 C: Pin 46 - PA13 - SWDIO
+
 D: Pin 49 - PA14 - SWCLK  (/USART2_TX - untested)
 
 ![Map of pin functions for header J11](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/pin%20functions.jpg)
