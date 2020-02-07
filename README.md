@@ -51,7 +51,9 @@ Check out his repo here:
 https://github.com/EliasKotlyar/IlifeX5Disassembly
 
 He has created a good labeled image of the pcb. I've indicated on the front of the pcb the 4 pins I have soldered wires to. This is our initial point of attack.
-https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/PCB-LABELED2.jpg
+
+The below picture was made by Kotlyar , not myself
+![Kotlyar's description](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/PCB-LABELED2.jpg)
 
 You know what... I'm going to stop right and just email the manufacturer. The company is based out of ShenZen, and the culture there is a little more open to the notion of sharing. I'm going to ask for schematics to the main PCB as there are a lot of vias aroudn the JP11 header and it's hard to visually trace them. I'll still use a multimeter to test continuity to these mcu pins, but it really couldn't hurt to ask.
 
