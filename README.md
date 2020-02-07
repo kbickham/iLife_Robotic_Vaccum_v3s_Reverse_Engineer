@@ -121,6 +121,15 @@ I've hooked it up to the st-link and the board makes some noise, it has a little
 
 # 2/7/2020
 7:30am
-I had opened some links last night to read in the morning... and I happened upon  aguy who's working on a different iLife robotic vacuum model. I'll be honest, it's encouraging to see other people working at these things. I gotta give credit, his name is Christian Bianciotto and you can find his progress at:
+I had opened some links last night to read in the morning... and I happened upon two other people who are working on different iLife robotic vacuum models. I'll be honest, it's encouraging to see other people working at these things. I gotta give credit:
+
 https://ci8.it/haier-t32x.html
+He has seemed to find some success via UART.
+
+and
+
+http://roboforum.ru/forum90/topic16676.html / https://github.com/linvinus/open_ilife
+The project page is in Russian but can be translated in google. They have some good details here as well. 
+
+
 
