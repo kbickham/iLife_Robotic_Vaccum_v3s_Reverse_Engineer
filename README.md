@@ -101,3 +101,24 @@ D: Pin 49 - PA14 - SWCLK  (/USART2_TX - untested)
 
 
 I have an ST-Link V2, I'm going to see what I can do. I predict the manufacturer has the firmware protected and I won't be able to read... but we'll see.
+
+# 2/6/2020
+8:30pm:
+
+Over the last few days, I've been looking through data sheet and mapping out the other pins...as I was hoping for a UART interface. This is the method utilized in hacking the Roomba... I found a link to a pdf (over 400 pages) to this if you're interested:
+https://www.robotiklubi.ee/_media/kursused/roomba_sumo/failid/hacking_roomba.pdf
+
+If anyone is interested (these are not yet tested) however I pulled these pin numbers and double checked, from the data sheet for the chip. I have several interface pins labeled:
+![i2c and Uart pins](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/iLife_interface_pins_untested.jpg)
+
+For now, I'd like to not mess with any extraneous soldering if avoidable. I decided to take off the wires I had soldered on the board and add a male pins. The spacing on the j11 is smaller than normal breadboard headers, so I had to break them off individually and cut down the plastic spaces and turn them sideways to fit. below is an image of this process, it's pretty self explanatory. Don't solder wires onto the port, it's a pain to get the extra solder out of the holes ... I wish I had added these pins initially.
+![Soldering male pins on j11](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/iLife_header_solder.jpg)
+
+I've hooked it up to the st-link and the board makes some noise, it has a little buzzer on it. This leads me to believe the chip is good and memory still contains the firmware in working form. After it boots up, the st-link has an error and disconnects. This board has several voltage regulators and a couple motor drivers. I have all the harnesses disconnected from the board, so my instinct tells me that they shouldn't be drawing power...but I'm wondering if those are drawing current and I may need to power the board from an external power supply to keep the main chip operating stable? 
+
+ I'm going to try to utilize the single wire debug port as is with an st-link. This is my first delve into the stm32, but since I need to learn it anyways ...I bought 2 stm32 dev boards (blue pill) and am learning to work with the Arm Embedded Toolchain in ubuntu with them. I want some practice before I take a crack at this board, because I don't want to brick it/loose my chance at pulling off the firmware. I believe it will take a lot more time if I have to test each of these sensors on the front harness and write new code to utilize them (bumb sensors, a pleatheora of ir sensors, and  3 pairs of emitter/detector pairs). 
+ 
+
+
+
+
