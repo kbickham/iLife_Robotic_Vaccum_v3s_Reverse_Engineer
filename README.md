@@ -119,6 +119,8 @@ I've hooked it up to the st-link and the board makes some noise, it has a little
  I'm going to try to utilize the single wire debug port as is with an st-link. This is my first delve into the stm32, but since I need to learn it anyways ...I bought 2 stm32 dev boards (blue pill) and am learning to work with the Arm Embedded Toolchain in ubuntu with them. I want some practice before I take a crack at this board, because I don't want to brick it/loose my chance at pulling off the firmware. I believe it will take a lot more time if I have to test each of these sensors on the front harness and write new code to utilize them (bump sensors, a pleatheora of ir sensors, and  3 pairs of emitter/detector pairs). 
  
 
-
-
+# 2/7/2020
+7:30am
+I had opened some links last night to read in the morning... and I happened upon  aguy who's working on a different iLife robotic vacuum model. I'll be honest, it's encouraging to see other people working at these things. I gotta give credit, his name is Christian Bianciotto and you can find his progress at:
+https://ci8.it/haier-t32x.html
 
