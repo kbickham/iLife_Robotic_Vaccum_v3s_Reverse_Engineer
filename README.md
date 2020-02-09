@@ -135,8 +135,16 @@ The project page is in Russian but can be translated in google. They have some g
 
 
 # 2/8/2020
-I've got the st-link to connect to the board but I beleive there is read out protection in place.
+I've got the st-link to connect to the board but I beleive there is read out protection in place. Everything peritnent is betwen 0x0...0 and 0x2000 0000.  
 ![memory map](https://github.com/kbickham/iLife_Robotic_Vaccum_v3s_Reverse_Engineer/blob/master/memory%20map.jpg)
 Above is a map of the memory on the chip. I made several attempts to read from different starting and ending addresses (listed them by starting adress and size respectively on the filenames) ...and I'm getting nothing but null... with some bits early on. 
-The files are in my "memoryreadattempts" folder. I will follow this name convention followed my attempt # once I make more progress. I've seen a few exploits on youtube. One steps through the processor cycles one step at a time and re-writes the register where the readout protection is on and nother exploits a race condition to read out memory one word at a time. I'm going to call it a night, but I'm getting better at using these tools. I will find success.
+The files are in my "memoryreadattempts" folder. I will follow this name convention followed my attempt # once I make more progress. 
+
+I heard about this paper in a talk and am currently working through it:
+
+Shedding too much Light on a Microcontroller's Firmware Protection
+written by Johannes Obermaier and Stefan Tatschner
+https://www.aisec.fraunhofer.de/content/dam/aisec/ResearchExcellence/woot17-paper-obermaier.pdf
+
+I've seen a few exploits on youtube. One steps through the processor cycles one step at a time and re-writes the register where the readout protection is on and nother exploits a race condition to read out memory one word at a time. I'm going to call it a night, but I'm getting better at using these tools. I will find success.
 
